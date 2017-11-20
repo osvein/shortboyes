@@ -42,7 +42,7 @@ main(int argc, char *argv[])
 	}
 	if (ferror(stdin)) {
 		perror(*argv);
-		exit(EXIT_FAILURE);
+		return EXIT_FAILURE;
 	}
 
 	return EXIT_SUCCESS;
